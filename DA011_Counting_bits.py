@@ -15,7 +15,6 @@ Follow up:
 
 
 def countBits(num):
-
     # Time O(n^2)
     ans = []
 

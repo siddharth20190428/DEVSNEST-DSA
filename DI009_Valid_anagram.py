@@ -29,8 +29,8 @@ def isAnagram(s, t):
 s = "anagram"
 t = "nagaram"
 
-s = "rat"
-t = "car"
+# s = "rat"
+# t = "car"
 
 
 print(isAnagram(s, t))

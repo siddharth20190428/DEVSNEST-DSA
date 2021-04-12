@@ -14,6 +14,7 @@ All the numbers of nums are unique.
 
 def subsets(nums):
     # Without recursion
+    # Dynamic programming
     ans = [[]]
 
     for num in nums:
