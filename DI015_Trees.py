@@ -15,14 +15,14 @@ def inorder(root):
 def preorder(root):
     if root:
         print(root.data, end=" ")
-        inorder(root.left)
-        inorder(root.right)
+        preorder(root.left)
+        preorder(root.right)
 
 
 def postorder(root):
     if root:
-        inorder(root.left)
-        inorder(root.right)
+        postorder(root.left)
+        postorder(root.right)
         print(root.data, end=" ")
 
 
@@ -31,6 +31,7 @@ def levelorder(root):
     while len(lo) > 0:
         node = lo.pop(0)
         print(node.data, end=" ")
+        # result.append(node.data)
         if node.left:
             lo.append(node.left)
         if node.right:
